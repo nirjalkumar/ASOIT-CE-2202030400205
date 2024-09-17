@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    body {
+        min-width: 100vw;
+
+    }
+
+    .productyDiv {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    @media (max-width: 991px) {
+        .productyDiv {
+            padding-right: 20px;
+        }
+    }
+
+    .div-2 {
+        color: #3e4152;
+        letter-spacing: 4.32px;
+        text-transform: uppercase;
+        align-self: start;
+        white-space: nowrap;
+        margin: 23px 0 0 59px;
+        font: 700 29px Assistant, sans-serif;
+    }
+
+    @media (max-width: 991px) {
+        .div-2 {
+            margin-left: 10px;
+            white-space: initial;
+        }
+    }
+
+    .div-3 {
+        display: flex;
+        margin-top: 8px;
+        max-width: 100vw;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    @media (max-width: 991px) {
+        .div-3 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .img {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 326px;
+        max-width: 100%;
+    }
+
+    .img-2 {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .img-3 {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .div-4 {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    @media (max-width: 991px) {
+        .div-4 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .img-4 {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .img-5 {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .div-5 {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    @media (max-width: 991px) {
+        .div-5 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .img-6 {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .img-7 {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 991px) {
+        .div-2 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .img {
+        aspect-ratio: 0.78;
+        object-fit: auto;
+        object-position: center;
+        width: 325px;
+        max-width: 100%;
+    }
+
+    .img-2 {
+        aspect-ratio: 0.63;
+        object-fit: auto;
+        object-position: center;
+        width: 265px;
+        max-width: 100%;
+    }
+
+    .div-3 {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 991px) {
+        .div-3 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .img-3 {
+        aspect-ratio: 0.63;
+        object-fit: auto;
+        object-position: center;
+        width: 265px;
+        max-width: 100%;
+    }
+
+    .div-4 {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 991px) {
+        .div-4 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .img-4 {
+        aspect-ratio: 0.93;
+        object-fit: auto;
+        object-position: center;
+        width: 390px;
+        max-width: 100%;
+    }
+
+    .img-5 {
+        aspect-ratio: 0.93;
+        object-fit: auto;
+        object-position: center;
+        width: 390px;
+        max-width: 100%;
+    }
+
+    .img-6 {
+        aspect-ratio: 0.93;
+        object-fit: auto;
+        object-position: center;
+        width: 390px;
+        max-width: 100%;
+    }
+
+    .img-7 {
+        aspect-ratio: 0.93;
+        object-fit: auto;
+        object-position: center;
+        width: 390px;
+        max-width: 100%;
+    }
+
+    .img-8 {
+        aspect-ratio: 0.79;
+        object-fit: auto;
+        object-position: center;
+        width: 330px;
+        max-width: 100%;
+    }
+
+    .div {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 14px;
+        color: #94969f;
+        font-weight: 700;
+        line-height: 18px;
+        padding: 50px 73px;
+    }
+
+    @media (max-width: 991px) {
+        .div {
+            padding: 0 20px;
+        }
+    }
+
+    .div-2 {
+        color: #535766;
+        font-family: Assistant, sans-serif;
+        line-height: 129%;
+    }
+
+    @media (max-width: 991px) {
+        .div-2 {
+            max-width: 100%;
+        }
+    }
+
+    .div-3 {
+        color: #696b79;
+        font-family: Assistant, sans-serif;
+        font-weight: 400;
+        margin-top: 73px;
+    }
+
+    @media (max-width: 991px) {
+        .div-3 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-4 {
+        color: #535766;
+        font-family: Assistant, sans-serif;
+        line-height: 129%;
+        margin-top: 71px;
+    }
+
+    @media (max-width: 991px) {
+        .div-4 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-5 {
+        font-family: Assistant, sans-serif;
+        font-weight: 400;
+        margin-top: 58px;
+    }
+
+    @media (max-width: 991px) {
+        .div-5 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-6 {
+        font-family: Assistant, sans-serif;
+        margin: 78px 0 0 111px;
+    }
+
+    @media (max-width: 991px) {
+        .div-6 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-7 {
+        color: #696b79;
+        font-family: Assistant, sans-serif;
+        margin: 103px 0 0 112px;
+    }
+
+    @media (max-width: 991px) {
+        .div-7 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-8 {
+        font-family: Assistant, sans-serif;
+        margin: 103px 0 0 117px;
+    }
+
+    @media (max-width: 991px) {
+        .div-8 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-9 {
+        font-family: Assistant, sans-serif;
+        margin: 88px 0 0 118px;
+    }
+
+    @media (max-width: 991px) {
+        .div-9 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-10 {
+        font-family: Assistant, sans-serif;
+        margin: 79px 0 0 111px;
+    }
+
+    @media (max-width: 991px) {
+        .div-10 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .image-mintra{
+        height: 100px;
+        width: 150px;
+        margin-left: 200px;
+    }
+</style>
+
+</style>
+
+<body>
+
+   
+    <div
+        style="display: flex;align-items: center; align-items: center;flex-direction: row;max-width: 100vw;flex-wrap: wrap;">
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c68d758f9eff3c427d1a06ccfc3c4079155df0ae0024150a4056b6b125c3f76c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4f859acc4bafcf91afbb2b4a788beae9b441ba36991cf1071770cd624a7d55?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/34e2e22325132c4dd40d12da45cf44ce7c5b62c46fa61a0f29bd43c9b44049f7?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/59f20de907c0860210c883041e82f3cc4e0c1360407f2172bad45f7dc32fafc2?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+        <div>
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b36e2b7ff121556e4aebec44c119941a640f7ee51de14dc7c5d9cbd8e510513f?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+        </div>
+        <div> <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/abe71e217b9434a3ba2032ca8c6480a0ae9ef5c23182627275582f727764e0ca?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" /></div>
+    </div>
+    <div class="productyDiv">
+        <!-- <div class="div-2">Shop By Category</div> -->
+        <div class="div-3">
+            <div>
+
+                <img loading="lazy"
+                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f954341a61fff2024755770e007851a7aa546ef372e27655f24187908ab68680?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                    class="img" />
+            </div>
+            <div></div>
+
+            <div>
+                <img loading="lazy"
+                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/77ca101821ff08c8fd700f600a762aef6c1951a76d57806337ea68ac6d98815a?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                    class="img" />
+            </div>
+            <div>
+                <img loading="lazy"
+                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/694426ba64da9ccf5f79405f0f11fae16a19ed8c7d48a44562ced893c77cf7ec?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                    class="img-3" />
+            </div>
+            <div>
+                <img loading="lazy"
+                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/899169101f44e1bf9894eba2caec07a12205885e695765ec648d3457031691c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                    class="img" />
+            </div>
+        </div>
+
+    </div>
+    <div class="div">
+        <div class="div-2">
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b3f093138b312ccc2fedd11bc163c8507866353026fdacd4614f9813ee93be9?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/74028fb891fac10c2fe628883a7a91361f7d5f644f86605ce7e9799fab644c9b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/218150e7c2784ed62da0854ce0ecb9736c0fa8d45dec5ed82d3d05f9be09ebae?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/34aed2b4ee063e14c411ae956e5b7e8d305138e8b877b6b5a755df20931c6203?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e82b73d88d63d41b65ed3a6d79bf9a0769fe917108d59b7bbfabdbcf7e211de1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e3a4b50fd005cd8b084cbc2919473afd6cbc8ab55ba478d2e42d761f5d87b3c8?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-2" />
+        </div>
+        <div class="div-3">
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b536a3c1b6ce4c21b7067cbf28f3ba88b887544a746b6093b11b6aa0caec891b?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0b4cb23333c39dd325297afb4d965e53d4887feddf95fda38e1b4da310e48ac5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a05fbe613797d02522fc68b35538cb27e9b4bf7f499390f833055ad04fc30f09?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b26ec87b6c92e0243123943ad6aa64bfc1326fe99f6e50af475d4d4bc738357c?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/752b04b8cc52e6715505d3c3b5569ba09e42637a91688d00a867deccca9c97b5?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ff3a417f3591264554fb9e80da4c0ad7a52d6ca3b62b25f94f9f30fa8349b143?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-3" />
+        </div>
+        <div class="div-4">
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-4" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/185672de80572a402921882bb8106fa09005ab63a092ac2a3d3ad895b61478eb?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-5" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/fa5c08cc5c5e784e725c4e90b45b9788435a2e0effb6c8efa64ac618fbf627b0?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-6" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6ddb1483053038683efb9adb24cc191586173af3bdcf2921127d02d38137fcf1?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-7" />
+            <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/63fc9ddfa24aedfcaac7071ffcc4976c069ca0ceedb8011f1e7bce257840f605?apiKey=2f52f23e38fe48b6a439bc5debfcaba3&"
+                class="img-8" />
+        </div>
+    </div>
+    <div class="div">
+        <div class="div-2">ONLINE SHOPPING MADE EASY AT MYNTRA</div>
+        <div class="div-3">
+            If you would like to experience the best of online shopping for men, women
+            and kids in India, you are at the right place. Myntra is the ultimate
+            destination for fashion and lifestyle, being
+            <br />
+            host to a wide array of merchandise including
+            <span style="color: rgba(105, 107, 121, 1)">clothing</span>
+            , footwear, accessories, jewellery, personal care products and more. It is
+            time to redefine your style statement with our treasure-trove
+            <br />
+            of trendy items. Our online store brings you the latest in designer products
+            straight out of fashion houses. You can shop online at Myntra from the
+            comfort of your home and get your
+            <br />
+            favourites delivered right to your doorstep.
+        </div>
+        <div class="div-4">BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</div>
+        <div class="div-5">
+            Be it clothing, footwear or accessories, Myntra offers you the ideal
+            combination of fashion and functionality for men, women and kids. You will
+            realise that the sky is the limit when it comes
+            <br />
+            to the types of outfits that you can purchase for different occasions.
+        </div>
+        <div class="div-6">
+            Smart men’s clothing
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                - At Myntra you will find myriad options in smart formal shirts and
+                trousers, cool T-shirts and jeans, or kurta and pyjama combinations for
+                men. Wear your
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                attitude with printed T-shirts. Create the back-to-campus vibe with
+                varsity T-shirts and distressed jeans. Be it gingham, buffalo, or
+                window-pane style, checked shirts are unbeatably
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                smart. Team them up with chinos, cuffed jeans or cropped trousers for a
+                smart casual look. Opt for a stylish layered look with biker jackets. Head
+                out in cloudy weather with courage
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                in water-resistant jackets. Browse through our innerwear section to find
+                supportive garments which would keep you confident in any outfit.
+            </span>
+        </div>
+        <div class="div-7">
+            Trendy women’s clothing
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">-</span>
+            <span style="font-weight: 400; color: rgba(105, 107, 121, 1)">
+                Online shopping for women
+            </span>
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                at Myntra is a mood-elevating experience. Look hip and stay comfortable
+                with chinos and printed shorts this summer. Look
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                hot on your date dressed in a little black dress, or opt for red dresses
+                for a sassy vibe. Striped dresses and T-shirts represent the classic
+                spirit of nautical fashion. Choose your
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                favourites from among Bardot, off-shoulder, shirt-style, blouson,
+                embroidered and peplum tops, to name a few. Team them up with skinny-fit
+                jeans, skirts or palazzos. Kurtis and
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                jeans make the perfect fusion-wear combination for the cool urbanite. Our
+                grand
+            </span>
+            <span style="font-weight: 400; color: rgba(105, 107, 121, 1)">sarees</span>
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                and lehenga-choli selections are perfect to make an impression at big
+                social events such as
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                weddings. Our salwar-kameez sets, kurtas and Patiala suits make
+                comfortable options for regular wear.
+            </span>
+        </div>
+        <div class="div-8">
+            Fashionable footwear
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                - While clothes maketh the man, the type of footwear you wear reflects
+                your personality. We bring you an exhaustive lineup of options in casual
+                shoes for
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                men, such as sneakers and loafers. Make a power statement at work dressed
+                in brogues and oxfords. Practice for your marathon with running shoes for
+                men and women. Choose
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                shoes for individual games such as tennis, football, basketball, and the
+                like. Or step into the casual style and comfort offered by sandals,
+                sliders, and flip-flops. Explore our lineup of
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                fashionable footwear for ladies, including pumps, heeled boots,
+                wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with
+                embellished and metallic flats.
+            </span>
+        </div>
+        <div class="div-9">
+            Stylish accessories
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                - Myntra is one of the best online shopping sites for classy accessories
+                that perfectly complement your outfits. You can select smart analogue or
+                digital watches
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                and match them up with belts and ties. Pick up spacious bags, backpacks,
+                and wallets to store your essentials in style. Whether you prefer minimal
+                jewellery or grand and sparkling
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                pieces, our online jewellery collection offers you many impressive
+                options.
+            </span>
+        </div>
+        <div class="div-10">
+            Fun and frolic
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                - Online shopping for kids at Myntra is a complete joy. Your little
+                princess is going to love the wide variety of pretty dresses, ballerina
+                shoes, headbands and clips.
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                Delight your son by picking up sports shoes, superhero T-shirts, football
+                jerseys and much more from our online store. Check out our lineup of toys
+                with which you can create
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                memories to cherish.
+            </span>
+        </div>
+    </div>
+
+    <div class="div">
+        <div class="div-2">
+            Beauty begins here
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                - You can also refresh, rejuvenate and reveal beautiful skin with personal
+                care, beauty and grooming products from Myntra. Our soaps, shower gels,
+                skin care
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                creams, lotions and other ayurvedic products are specially formulated to
+                reduce the effect of aging and offer the ideal cleansing experience. Keep
+                your scalp clean and your hair
+            </span>
+            <br />
+            <span style="font-weight: 400; color: rgba(148, 150, 159, 1)">
+                uber-stylish with shampoos and hair care products. Choose makeup to
+                enhance your natural beauty.
+            </span>
+        </div>
+        <div class="div-3">
+            Myntra is one of the best online shopping sites in India which could help
+            transform your living spaces completely. Add colour and personality to your
+            bedrooms with bed linen and curtains.
+            <br />
+            Use smart tableware to impress your guest. Wall decor, clocks,
+            <span style="color: rgba(105, 107, 121, 1)">photo frames</span>
+            and artificial plants are sure to breathe life into any corner of your home.
+        </div>
+        <div class="div-4">AFFORDABLE FASHION AT YOUR FINGERTIPS</div>
+        <div class="div-5">
+            Myntra is one of the unique online shopping sites in India where fashion is
+            accessible to all. Check out our new arrivals to view the latest designer
+            clothing, footwear and accessories in the
+            <br />
+            market. You can get your hands on the trendiest style every season in
+            western wear. You can also avail the best of ethnic fashion during all
+            Indian festive occasions. You are sure to be
+            <br />
+            impressed with our seasonal discounts on footwear, trousers, shirts,
+            backpacks and more. The end-of-season sale is the ultimate experience when
+            fashion gets unbelievably affordable.
+        </div>
+        <div class="div-6">MYNTRA INSIDER</div>
+        <div class="div-7">
+            Every online shopping experience is precious. Hence, a cashless reward-based
+            customer loyalty program called
+            <span style="color: rgba(105, 107, 121, 1)">Myntra Insider</span>
+            was introduced to enhance your online experience. The
+            <br />
+            program is applicable to every registered customer and measures rewards in
+            the form of Insider Points.
+        </div>
+        <div class="div-8">
+            There are four levels to achieve in the program, as the Insider Points
+            accumulate. They are - Insider, Select, Elite or Icon. Apart from offering
+            discounts on Myntra and partner platform
+            <br />
+            coupons, each tier comes with its own special perks.
+        </div>
+        <div class="div-9">Insider</div>
+        <div class="div-10">
+            Opportunity to master any domain in fashion with tips from celebrity
+            stylists at Myntra Masterclass sessions.
+        </div>
+        <div class="div-11">Curated collections from celeb stylists.</div>
+        <div class="div-12">Elite</div>
+        <div class="div-13">
+            <div class="div-14">Icon</div>
+            <div class="div-15">
+                <div class="div-16">
+                    VIP access to special sale events such as the End of Reason Sale (EORS)
+                    and product launches.
+                </div>
+                <div class="div-17">
+                    Exclusive early access to Limited Edition products
+                </div>
+                <div class="div-18">Chance to get on guest lists for special events.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="div">
+        <div class="div-2">
+            Myntra Studio - The Personalised Fashion Feed You Wouldn’t Want To Miss Out
+            On
+        </div>
+        <div class="div-3">
+            The world wide web is evolving at a relentless pace, and with an accelerated
+            growth each passing year, there is bound to be an overwhelming surge of
+            online content. It was for this very
+            <br />
+            reason that personalisation of search feeds was proposed as a solution to
+            combat the overload of irrelevant information.
+        </div>
+        <div class="div-4">
+            Several social media platforms such as Facebook and Instagram along with
+            various online shopping websites have chosen to help filter content,
+            increasing user engagement, retention and
+            <br />
+            customer loyalty.
+        </div>
+        <div class="div-5">
+            Myntra is one such online shopping website that joins the list of platforms
+            that help curate a personalised fashion feed. Named the
+            <span style="color: rgba(105, 107, 121, 1)">Myntra Studio</span>
+            , this personalised search feed brings you
+            <br />
+            the latest men and women’s fashion trends, celebrity styles, branded content
+            and daily updates from your favourite fashion labels.
+        </div>
+        <div class="div-6">
+            If you are wondering how impactful Myntra Studio can be, we are listing out
+            five perks of having a rich, meaningful, and personalised fashion feed in
+            your life.
+        </div>
+        <div class="div-7">
+            The #OOTD, AKA outfit of the day hashtag trend has been a rage among fashion
+            bloggers and stylists. The whole concept of building an outfit from scratch
+            and showcasing it to a
+            <br />
+            huge community of enthusiasts using the hashtag has helped individuals with
+            understanding trends and making suitable for daily wear.
+        </div>
+        <div class="div-8">
+            Imagine if you could keep up with every piece of clothing and accessory worn
+            by the fashion icons you look upto. From Sonam Kapoor to Hailey Baldwin
+            Bieber, Myntra Studio has a
+            <br />
+            ‘Stories’ feature to help track celebrity fashion trends, exploring details
+            such as their outfit of the day. This way, you would not ever miss out on
+            the latest celebrity fashion trends,
+            <br />
+            from all around the world.
+        </div>
+        <div class="div-9">
+            Whether it is draping a saree into a dhoti style, wearing the right lingerie
+            under certain dresses or discovering multiple uses out of heavy ethnic wear,
+            Myntra Studio will help you
+            <br />
+            acquire some unique and useful fashion hacks. Each hack is designed with the
+            intention to help you get the best wear out of everything in your wardrobe.
+        </div>
+        <div class="div-10">
+            Since fast fashion seems to be extremely hard to keep up with these days, a
+            quick update on what is trending in accessories, clothing and footwear would
+            certainly be of great help.
+            <br />
+            Myntra Studio helps you stay connected to the most beloved and sought after
+            brands such as Puma, Coverstory, The Label Life and so many more.
+        </div>
+        <div class="div-11">
+            Your feed keeps you updated with stories of what the brands are creating
+            including clothing, footwear and jewellery, along with their new seasonal
+            collections.
+        </div>
+        <div class="div-12">
+            Just like fashion, the beauty community keeps on growing, and with brands
+            such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif, are
+            constantly coming up with
+            <br />
+            mind-blowing products. Whether it is creating a no-makeup look, different
+            winged eyeliners, do-it-yourself facial masks and other personal care beauty
+            routines, Myntra Studio is
+            <br />
+            here for you.
+        </div>
+        <div class="div-13">
+            <div class="div-14">
+                Updates on What Is Trending and New Product Launches
+            </div>
+            <div class="div-15">Explicit Step-By-Step Beauty Routines From Experts</div>
+        </div>
+    </div>
+
+
+    <div class="div">
+        <div class="div-2">Celebrity Confessions And A Look Into Their Lives</div>
+        <div class="div-3">
+          A bonus feature that Myntra Studio has in store for you is celebrity
+          confessions and a peek into their lives. So, Myntra helps you stay connected
+          to your most beloved celebrities in a
+          <br />
+          matter of clicks.
+        </div>
+        <div class="div-4">
+          If you are very particular when it comes to the content you wish to view and
+          engage with on social media, the ability to intricately filter content helps
+          achieve that. Applying the same
+          <br />
+          formula for hardcore fashion lovers and shoppers, Myntra Studio brings you a
+          daily fashion fix incorporating everything that you love, all at one place.
+          Sign up on Myntra today and
+          <br />
+          start organising your fashion feed, just the way you want to.
+        </div>
+        <div class="div-5">MYNTRA APP</div>
+        <div class="div-6">
+          Myntra, India’s no. 1 online fashion destination justifies its fashion
+          relevance by bringing something new and chic to the table on the daily.
+          Fashion trends seem to change at lightning
+          <br />
+          speed, yet the Myntra shopping app has managed to keep up without any
+          hiccups. In addition, Myntra has vowed to serve customers to the best of its
+          ability by introducing its first-ever
+          <br />
+          loyalty program, The Myntra Insider. Gain access to priority delivery, early
+          sales, lucrative deals and other special perks on all your shopping with the
+          Myntra app. Download the Myntra app
+          <br />
+          on your
+          <span style="color: rgba(105, 107, 121, 1)">Android</span>
+          or
+          <span style="color: rgba(105, 107, 121, 1)">IOS</span>
+          device today and experience shopping like never before!
+        </div>
+        <div class="div-7">HISTORY OF MYNTRA</div>
+        <div class="div-8">
+          Becoming India’s no. 1 fashion destination is not an easy feat. Sincere
+          efforts, digital enhancements and a team of dedicated personnel with an
+          equally loyal customer base have made
+          <br />
+          Myntra the online platform that it is today. The original B2B venture for
+          personalized
+          <span style="color: rgba(105, 107, 121, 1)">gifts</span>
+          was conceived in 2007 but transitioned into a full-fledged ecommerce giant
+          within a span of just a
+          <br />
+          few years. By 2012, Myntra had introduced 350 Indian and international
+          brands to its platform, and this has only grown in number each passing year.
+          Today Myntra sits on top of the online
+          <br />
+          fashion game with an astounding social media following, a loyalty program
+          dedicated to its customers, and tempting, hard-to-say-no-to deals.
+        </div>
+        <div class="div-9">
+          The Myntra shopping app came into existence in the year 2015 to further
+          encourage customers’ shopping sprees. Download the app on your Android or
+          IOS device this very minute to
+          <br />
+          experience fashion like never before
+        </div>
+        <div class="div-10">SHOP ONLINE AT MYNTRA WITH COMPLETE CONVENIENCE</div>
+        <div class="div-11">
+          Another reason why Myntra is the best of all online stores is the complete
+          convenience that it offers. You can view your favourite brands with price
+          options for different products in one
+          <br />
+          place. A user-friendly interface will guide you through your selection
+          process. Comprehensive size charts, product information and high-resolution
+          images help you make the best buying
+          <br />
+          decisions. You also have the freedom to choose your payment options, be it
+          card or cash-on-delivery. The 14-day returns policy gives you more power as
+          a buyer. Additionally, the try-and-
+          <br />
+          buy option for select products takes customer-friendliness to the next
+          level.
+        </div>
+        <div class="div-12">
+          Enjoy the hassle-free experience as you shop comfortably from your home or
+          your workplace. You can also shop for your friends, family and loved-ones
+          and avail our gift services for special
+          <br />
+          occasions.
+        </div>
+      </div>
+
+
+
+</body>
+
+</html>
